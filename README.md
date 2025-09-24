@@ -25,7 +25,7 @@ The final report provides a **360° view of company performance**, covering reve
 
 ### 1️⃣ Employee Performance Dashboard
 ```
-![Employee Performance Dashboard](images/Employee_Performance.png)
+![Employee Performance Dashboard](images\Employee_Performance.png)
 ```
 **Key Features:**
 - Revenue generation per employee analysis
