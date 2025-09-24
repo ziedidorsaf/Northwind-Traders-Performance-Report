@@ -27,7 +27,7 @@ The final report provides a **360° view of company performance**, covering reve
 ![Executive Dashboard](images/Executive_Dashboard.png)
 
 **Key Features:**
-- High-level KPIs: Revenue, Profit, Orders, Customers, Employees  
+- High-level KPIs: Revenue, Profit, Orders, Customers
 - Company-wide performance summary  
 - Revenue & profit distribution across dimensions  
 - Month-over-month trends  
@@ -39,7 +39,7 @@ The final report provides a **360° view of company performance**, covering reve
 
 **Key Features:**
 - Top 10 customers by order volume & revenue  
-- VIP and high-value customer segmentation  
+- VIP, high-value, Medium Value, and Low Value customer segmentation  
 - Geographic distribution of customers  
 - Product category preferences  
 
