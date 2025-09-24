@@ -23,104 +23,92 @@ The final report provides a **360° view of company performance**, covering reve
 
 ## 📌 Report Pages & Features
 
-### 1️⃣ Employee Performance Dashboard
-```
-![Employee Performance Dashboard](images/Employee_Performance.png)
-```
+### 1️⃣ Executive Dashboard
+![Executive Dashboard](images/Executive_Dashboard.png)
+
 **Key Features:**
-- Revenue generation per employee analysis
-- Order handling capacity by individual staff
-- Profit contribution breakdown
-- Performance ranking and comparison
-- Employee efficiency metrics
+- High-level KPIs: Revenue, Profit, Orders, Customers, Employees  
+- Company-wide performance summary  
+- Revenue & profit distribution across dimensions  
+- Month-over-month trends  
 
 **Insights:**
-- Employee #4 leads revenue generation ($0.25M)
-- Top performer handles 156+ orders
-- Clear performance distribution across team
+- Revenue reached $1.4M, with $406K net profit  
+- Beverages contributed **21.15% of revenue**  
+- Orders peaked in March–April  
 
 ---
 
-### 2️⃣ Delivery Performance Analytics
-```
-![Delivery Performance Analytics](images/delivery_performance.png)
-```
+### 2️⃣ Customer Insights
+![Customer Insights](images/Customer_Insights.png)
+
 **Key Features:**
-- On-time vs late delivery tracking (95.54% on-time rate)
-- Average delivery days trend analysis
-- Shipper performance comparison
-- Customer distribution per shipping provider
-- Monthly delivery performance trends
+- Top 10 customers by order volume & revenue  
+- VIP and high-value customer segmentation  
+- Geographic distribution of customers  
+- Product category preferences  
 
 **Insights:**
-- 793 on-time deliveries vs 37 late orders
-- 8-day average delivery time
-- Consistent performance across shipping partners
+- **QUICK** customer: 28 orders, $117K revenue  
+- USA leads with **15 active customers**  
+- Balanced distribution across categories  
 
 ---
 
-### 3️⃣ Sales Performance Report
-```
-![Sales Performance Report](images/sales_performance.png)
-```
+### 3️⃣ Top/Bottom Products
+![Top/Bottom Products](images/Top_Bottom_Products.png)
+
 **Key Features:**
-- Top 5 products by units sold, revenue, and orders
-- Bottom 5 products performance analysis
-- Product category breakdown
-- Revenue per product insights
-- Sales volume comparisons
+- Top 5 & bottom 5 products by revenue, units, orders  
+- Category-level performance breakdown  
+- Product sales volume comparisons  
 
 **Insights:**
-- **Camembert Pierrot** leads in units (1577 sold)
-- **Côte de Blaye** generates highest revenue ($150K)
-- **Raclette Courdavault** most ordered product
+- **Camembert Pierrot**: 1,577 units sold  
+- **Côte de Blaye**: $150K revenue (highest)  
+- **Raclette Courdavault**: most frequently ordered  
 
 ---
 
-### 4️⃣ Customer Analytics Dashboard
-```
-![Customer Analytics Dashboard](images/customer_analytics.png)
-```
+### 4️⃣ Employee Performance
+![Employee Performance](images/Employee_Performance.png)
+
 **Key Features:**
-- Top 10 customers by order volume and revenue
-- Customer segmentation (VIP, High Value)
-- Geographic distribution analysis
-- Product category preferences
-- Customer lifetime value metrics
+- Revenue per employee analysis  
+- Orders handled by staff  
+- Profit contribution per employee  
+- Performance ranking  
 
 **Insights:**
-- **QUICK** customer leads with 28 orders ($117K revenue)
-- Strong customer base in USA (15 customers)
-- Balanced distribution across product categories
+- Employee #4: top revenue generator ($0.25M)  
+- 5 employees manage **60%+ of orders**  
+- Performance distribution across 9 employees  
 
 ---
 
-### 5️⃣ Business Intelligence Overview
-```
-![Business Intelligence Overview](images/business_overview.png)
-```
+### 5️⃣ Delivery Performance
+![Delivery Performance](images/Delivery_Performance.png)
+
 **Key Features:**
-- Orders breakdown by category
-- Monthly orders trend analysis
-- Revenue distribution by country
-- Category-wise revenue and order percentages
-- Seasonal performance patterns
+- On-time vs late delivery tracking  
+- Shipper performance analysis  
+- Customer allocation by shipper  
+- Average delivery days  
 
 **Insights:**
-- **Beverages** lead in orders (334 orders, 21.15% revenue)
-- Peak performance in March-April period
-- **USA** dominates revenue contribution
-- Balanced category distribution
+- **95.54% on-time rate** (793 orders)  
+- 37 late orders recorded  
+- Average delivery time: **8 days**  
 
 ---
 
 ## 🛠️ Technical Implementation
 
 ### Data Model
-- **11 interconnected tables** with proper relationships
-- **Star schema design** for optimal performance
-- **Data cleaning & transformation** using Power Query
-- **Custom measures & calculated columns** in DAX
+- **11 interconnected tables** with proper relationships  
+- **Star schema design** for optimal performance  
+- **Power Query** for cleaning & transformation  
+- **Custom measures in DAX** for KPIs & rankings  
 
 ### Key DAX Measures
 ```dax
@@ -128,131 +116,3 @@ Total Revenue = SUM(Orders[OrderTotal])
 Profit Margin = DIVIDE([Total Profit], [Total Revenue], 0)
 On-Time Delivery Rate = DIVIDE([On-Time Orders], [Total Orders], 0)
 Top Customer Rank = RANKX(ALL(Customers), [Customer Revenue], DESC)
-```
-
-### Interactive Features
-- 🎛️ **Dynamic filtering** by Year, Category, Employee, Customer
-- 📅 **Date range slicers** for temporal analysis
-- 🔄 **Cross-filtering** across all visualizations
-- 📱 **Mobile-responsive** design
-- 🎨 **Modern gradient UI** with intuitive navigation
-
----
-
-## 📊 Business Insights & Recommendations
-
-### 🏆 Key Findings
-1. **Employee #4** is the top revenue generator - consider replicating their approach
-2. **95.54% on-time delivery** rate demonstrates operational excellence
-3. **Camembert Pierrot** and **Côte de Blaye** are star products
-4. **USA market** shows strongest performance potential
-5. **Seasonal trends** indicate March-April peak periods
-
-### 💡 Strategic Recommendations
-- **Scale successful practices** from top-performing employees
-- **Invest in top-performing products** for inventory optimization
-- **Expand USA market** presence given strong performance
-- **Seasonal planning** around March-April peak periods
-- **Customer retention** programs for VIP segments
-
----
-
-## 🔧 Installation & Usage
-
-### Prerequisites
-- Power BI Desktop (latest version)
-- Northwind sample database
-- Basic understanding of Power BI navigation
-
-### Setup Instructions
-```bash
-# 1. Clone this repository
-git clone https://github.com/yourusername/northwind-powerbi-dashboard.git
-
-# 2. Navigate to project folder
-cd northwind-powerbi-dashboard
-
-# 3. Open the .pbix file in Power BI Desktop
-# File: Northwind_Performance_Report.pbix
-```
-
-### Usage Guide
-1. **Open** the .pbix file in Power BI Desktop
-2. **Navigate** between pages using the bottom tabs
-3. **Apply filters** using slicers and dropdown menus
-4. **Interact** with visuals by clicking for cross-filtering
-5. **Export** reports or publish to Power BI Service
-
----
-
-## 📁 Project Structure
-```
-northwind-powerbi-dashboard/
-│
-├── data/
-│   ├── northwind_database.xlsx
-│   └── data_dictionary.md
-│
-├── images/
-│   ├── employee_performance.png
-│   ├── delivery_performance.png
-│   ├── sales_performance.png
-│   ├── customer_analytics.png
-│   └── business_overview.png
-│
-├── reports/
-│   ├── Northwind_Performance_Report.pbix
-│   └── data_model_documentation.pdf
-│
-├── README.md
-└── LICENSE.md
-```
-
----
-
-## 🎯 Skills Demonstrated
-
-- **Data Modeling** - Star schema design, relationships, data integrity
-- **DAX Programming** - Advanced calculations, time intelligence, ranking
-- **Data Visualization** - Chart selection, color theory, UX/UI principles  
-- **Business Intelligence** - KPI definition, executive reporting, storytelling
-- **Power BI Mastery** - Advanced features, performance optimization
-- **Stakeholder Communication** - Clear insights, actionable recommendations
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- **Microsoft** for the Northwind sample database
-- **Power BI Community** for inspiration and best practices
-- **Open source community** for tools and resources
-
----
-
-## 📞 Contact
-
-**Your Name** - [@yourhandle](https://twitter.com/yourhandle) - your.email@example.com
-
-**Project Link:** [https://github.com/yourusername/northwind-powerbi-dashboard](https://github.com/yourusername/northwind-powerbi-dashboard)
-
----
-
-⭐ **Star this repository** if you found it helpful!
