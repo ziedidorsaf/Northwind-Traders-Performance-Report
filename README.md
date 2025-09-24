@@ -55,7 +55,17 @@ The final report provides a **360° view of company performance**, covering reve
 
 ---
 
-### 4️⃣ Employee Performance
+### 4️⃣ Delivery Performance
+![Delivery Performance](images/Delivery_Performance.png)
+
+**Key Features:**
+- On-time vs late delivery tracking  
+- Shipper performance analysis  
+- Customer allocation by shipper  
+- Average delivery days 
+---
+
+### 5️⃣ Employee Performance
 ![Employee Performance](images/Employee_Performance.png)
 
 **Key Features:**
@@ -63,16 +73,6 @@ The final report provides a **360° view of company performance**, covering reve
 - Orders handled by staff  
 - Profit contribution per employee  
 - Performance ranking
-- 
----
-
-### 5️⃣ Delivery Performance
-![Delivery Performance](images/Delivery_Performance.png)
-
-**Key Features:**
-- On-time vs late delivery tracking  
-- Shipper performance analysis  
-- Customer allocation by shipper  
-- Average delivery days  
+ 
 
 
